@@ -45,7 +45,7 @@ thinking-machine-api/
 
 **Before you begin, ensure you have the following installed:**
 
-- **Python 3.11+**
+- **Python 3.11**
 - **Azure Functions Core Tools**
 - **Docker** (for Azurite storage emulator)
 
