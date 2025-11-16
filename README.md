@@ -126,27 +126,28 @@ The queue trigger processes the CSV and outputs JSON grouping results in **two w
 
 **Example output file:**
 
-````json
+```json
 {
   "horizontal_groups": [
-    {"y": 10, "texts": ["Hello", "World"]},
-    {"y": 20, "texts": ["This", "Is", "Test"]},
-    {"y": 50, "texts": ["Example", "Data"]}
+    { "y": 10, "texts": ["Hello", "World"] },
+    { "y": 20, "texts": ["This", "Is", "Test"] },
+    { "y": 50, "texts": ["Example", "Data"] }
   ],
   "vertical_groups": [
-    {"x": 10, "texts": ["Hello"]},
-    {"x": 12, "texts": ["World"]},
-    {"x": 50, "texts": ["This"]},
-    {"x": 52, "texts": ["Is"]},
-    {"x": 55, "texts": ["Test"]},
-    {"x": 100, "texts": ["Example"]},
-    {"x": 105, "texts": ["Data"]}
+    { "x": 10, "texts": ["Hello"] },
+    { "x": 12, "texts": ["World"] },
+    { "x": 50, "texts": ["This"] },
+    { "x": 52, "texts": ["Is"] },
+    { "x": 55, "texts": ["Test"] },
+    { "x": 100, "texts": ["Example"] },
+    { "x": 105, "texts": ["Data"] }
   ]
 }
-````
+```
+
 Note: Each CSV upload creates a separate results file with timestamp, providing a persistent audit trail.
 
-***
+---
 
 ## CSV Format
 
@@ -157,6 +158,7 @@ Note: Each CSV upload creates a separate results file with timestamp, providing 
 - `y`: Y coordinate (numeric)
 
 **Example CSV:**
+
 ```csv
 text,x,y
 Hello,10,10
@@ -166,7 +168,7 @@ Is,52,20
 Test,55,20
 Example,100,50
 Data,105,50
-````
+```
 
 ---
 
@@ -188,7 +190,7 @@ Data,105,50
 
 ```bash
 # Run all unit tests
-python -m pytest test_processing.py -v
+python -m pytest tests/test_processing.py -v
 ```
 
 ---
