@@ -28,7 +28,7 @@ HTTP Request → Upload CSV → Queue Message → Queue Trigger → Process CSV 
 
 ## Project Structure
 
-thinking-machine-api/
+thinking-machine-api/\
 ├── function_app.py # Azure Functions (HTTP & Queue triggers)\
 ├── processing_utils.py # CSV processing and grouping logic\
 ├── storage_utils.py # Blob storage and queue operations\
