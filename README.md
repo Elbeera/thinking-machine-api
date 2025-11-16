@@ -28,15 +28,15 @@ HTTP Request → Upload CSV → Queue Message → Queue Trigger → Process CSV 
 
 ## Project Structure
 
-thinking-machine-api/
-├── function_app.py # Azure Functions (HTTP & Queue triggers)
-├── processing_utils.py # CSV processing and grouping logic
-├── storage_utils.py # Blob storage and queue operations
-├── test_processing.py # Unit tests for processing logic
-├── clear_poison.py # Utility to clear poison queues
-├── host.json # Functions runtime configuration
-├── local.settings.json # Local environment variables
-├── requirements.txt # Python dependencies
+thinking-machine-api/\
+├── function_app.py # Azure Functions (HTTP & Queue triggers)\
+├── processing_utils.py # CSV processing and grouping logic\
+├── storage_utils.py # Blob storage and queue operations\
+├── test_processing.py # Unit tests for processing logic\
+├── clear_poison.py # Utility to clear poison queues\
+├── host.json # Functions runtime configuration\
+├── local.settings.json # Local environment variables\
+├── requirements.txt # Python dependencies\
 └── README.md # This file
 
 ---
@@ -45,7 +45,7 @@ thinking-machine-api/
 
 **Before you begin, ensure you have the following installed:**
 
-- **Python 3.11+**
+- **Python 3.11**
 - **Azure Functions Core Tools**
 - **Docker** (for Azurite storage emulator)
 
@@ -143,6 +143,7 @@ The queue trigger processes the CSV and outputs JSON grouping results in **two w
     {"x": 105, "texts": ["Data"]}
   ]
 }
+````
 Note: Each CSV upload creates a separate results file with timestamp, providing a persistent audit trail.
 
 ***
@@ -173,15 +174,13 @@ Data,105,50
 
 ### Horizontal Groups
 
-- Groups text entries with the same Y coordinate (rounded down to whole number)
+- Groups text entries with the same Y coordinate
 - Entries are considered on the same horizontal line if they share the same Y value
 
 ### Vertical Groups
 
-- Groups text entries with the same X coordinate (rounded down to whole number)
+- Groups text entries with the same X coordinate
 - Entries are considered in the same vertical column if they share the same X value
-
-**Example:** Entries at coordinates (10.7, 15.2) and (10.9, 15.8) will both be grouped at (10, 15)
 
 ---
 
