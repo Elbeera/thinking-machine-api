@@ -174,15 +174,13 @@ Data,105,50
 
 ### Horizontal Groups
 
-- Groups text entries with the same Y coordinate (rounded down to whole number)
+- Groups text entries with the same Y coordinate
 - Entries are considered on the same horizontal line if they share the same Y value
 
 ### Vertical Groups
 
-- Groups text entries with the same X coordinate (rounded down to whole number)
+- Groups text entries with the same X coordinate
 - Entries are considered in the same vertical column if they share the same X value
-
-**Example:** Entries at coordinates (10.7, 15.2) and (10.9, 15.8) will both be grouped at (10, 15)
 
 ---
 
