@@ -37,7 +37,7 @@ thinking-machine-api/
 ├── host.json # Functions runtime configuration\
 ├── local.settings.json # Local environment variables\
 ├── requirements.txt # Python dependencies\
-└── README.md # This file\
+└── README.md # This file
 
 ---
 
