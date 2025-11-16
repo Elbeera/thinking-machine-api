@@ -29,15 +29,15 @@ HTTP Request → Upload CSV → Queue Message → Queue Trigger → Process CSV 
 ## Project Structure
 
 thinking-machine-api/
-├── function_app.py # Azure Functions (HTTP & Queue triggers)
-├── processing_utils.py # CSV processing and grouping logic
-├── storage_utils.py # Blob storage and queue operations
-├── test_processing.py # Unit tests for processing logic
-├── clear_poison.py # Utility to clear poison queues
-├── host.json # Functions runtime configuration
-├── local.settings.json # Local environment variables
-├── requirements.txt # Python dependencies
-└── README.md # This file
+├── function_app.py # Azure Functions (HTTP & Queue triggers)\
+├── processing_utils.py # CSV processing and grouping logic\
+├── storage_utils.py # Blob storage and queue operations\
+├── test_processing.py # Unit tests for processing logic\
+├── clear_poison.py # Utility to clear poison queues\
+├── host.json # Functions runtime configuration\
+├── local.settings.json # Local environment variables\
+├── requirements.txt # Python dependencies\
+└── README.md # This file\
 
 ---
 
