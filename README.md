@@ -143,6 +143,7 @@ The queue trigger processes the CSV and outputs JSON grouping results in **two w
     {"x": 105, "texts": ["Data"]}
   ]
 }
+````
 Note: Each CSV upload creates a separate results file with timestamp, providing a persistent audit trail.
 
 ***
